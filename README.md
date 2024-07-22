@@ -1,5 +1,9 @@
 ### Creating a Basic Dashboard with HTML and CSS
 
+## Visit this link to view the output:
+```
+https://veedantbrahmbhatt.github.io/NSIP_Dashboard/
+```
 In this blog post, we'll guide you through creating a basic dashboard interface using HTML and CSS. This simple project will help you understand the structure and styling of web components, which is essential for front-end web development. By the end, you'll have a clean and functional dashboard layout that you can expand on for more complex projects.
 
 #### Project Overview
