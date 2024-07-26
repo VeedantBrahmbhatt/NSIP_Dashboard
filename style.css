@@ -1,19 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 80%;
-    /* background-color: #e0e0e0; */
-    background-color: #b0c4de;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #e0e0e0;
     padding: 20px;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 .header {
@@ -22,8 +21,9 @@ body {
     align-items: center;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #979595;
+    background-color: #c0c0c0;
     border-radius: 8px;
+    flex-wrap: wrap;
 }
 
 .button-group {
@@ -57,6 +57,8 @@ body {
     padding: 20px;
     background: linear-gradient(to bottom, #ffffff, #b0c4de);
     border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 table {
@@ -73,8 +75,59 @@ th, td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
+    white-space: nowrap;
 }
 
 tbody tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+select, input[type="text"] {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .button-group button {
+        width: 48%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
 }
