@@ -58,7 +58,7 @@ body {
     background: linear-gradient(to bottom, #ffffff, #b0c4de);
     border-radius: 8px;
     overflow: auto;
-    max-height: 400px;
+    max-height: calc(20 * 42px); /* Assuming each row is approximately 42px tall */
 }
 
 table {
