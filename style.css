@@ -54,11 +54,9 @@ body {
 }
 
 .table-container {
-    /* padding: 20px; */
+    padding: 20px;
     background: linear-gradient(to bottom, #ffffff, #b0c4de);
     border-radius: 8px;
-    overflow: auto;
-    max-height: calc(20 * 42px); /* Assuming each row is approximately 42px tall */
 }
 
 table {
@@ -95,6 +93,35 @@ select, input[type="text"] {
 
 input[type="text"] {
     width: 100px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.pagination button.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
