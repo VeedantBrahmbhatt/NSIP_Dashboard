@@ -7,7 +7,7 @@ In this blog post, we'll walk through the creation of a responsive dashboard usi
 Our dashboard includes the following features:
 - **Search by Request ID**: Quickly find records by typing the Request ID.
 - **Filter by Circle**: Filter records based on the Circle.
-- **Pagination**: Navigate through records 10 at a time using forward and back buttons.
+- **Pagination**: Navigate through records 15 at a time using page number buttons.
 
 #### File Structure
 
@@ -51,8 +51,9 @@ project-directory/
 
 5. **pagination.js**
    - Manages the pagination of the table.
-   - Displays only 10 rows per page and provides forward and back buttons to navigate through the pages.
+   - Displays only 15 rows per page and provides individual page buttons to navigate through the pages.
    - Disables the buttons appropriately when there are no more pages to navigate.
+   - Provides the information on records displayed and from the total records.
 
 #### How to Run the Project
 
